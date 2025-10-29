@@ -1,0 +1,9 @@
+# Render Blueprint — Native PHP build via Dockerfile
+services:
+  - type: web
+    name: rssbridge-php
+    env: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true

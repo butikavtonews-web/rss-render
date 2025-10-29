@@ -1,0 +1,11 @@
+# Render Blueprint — Docker image variant
+services:
+  - type: web
+    name: rssbridge-docker
+    env: docker
+    plan: free
+    region: frankfurt
+    docker:
+      image: rssbridge/rss-bridge:latest
+    healthCheckPath: /
+    autoDeploy: true
